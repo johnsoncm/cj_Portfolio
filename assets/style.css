@@ -15,30 +15,28 @@
     --font-color: #ffffff;
     --background-color2: cornsilk;
     --title-font: 'Gruppo', cursive;
-    --nav-font: 'Pontano Sans', sans-serif;
+    --font: 'Pontano Sans', sans-serif;
 }
 
-
-/* Header styling */
-
-.header {
-    padding: 20px;
-    font-family: var(--title-font);
-    background-color: var(--header-color);
-    color: var(--font-color);
+#para-text{
+ line-height: normal;
 }
+
+#about-me{
+    font-weight: bolder;
+}
+
+/* Navbar styling */
+
 
 .navbar{
     background-color:honeydew;
-
-    @media screen (min-width: 600px){
-        justify-content: space-between;
-    }
-        
-    
+ 
 }
 
-
+/* @media screen (min-width: 600px){
+    justify-content: space-between;
+} */
 
 #contact{
     background-color: rgb(233, 233, 233);
@@ -53,12 +51,12 @@
    
    
 }
-@media screen and (max-height: 1023px){
+/* @media screen and (max-height: 1023px){
  .navbar-start{
      display: flex;
      flex-direction: column;
- }
-}
+ } 
+} */
 
 
 .subtitle {
@@ -100,6 +98,17 @@
     align-items:center;
   
 }
+
+@media screen and (max-height: 1023px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+    
+
 
 .nav {
     display: flex;
@@ -162,9 +171,7 @@ body{
     background-color: rgb(233, 233, 233);
 }
 
-#work-aboutme{
-    margin-bottom:50px;
-}
+
  .my-name{
     margin-right: 700px;
     padding-left: 25px;
@@ -212,12 +219,13 @@ body{
 }
 
   .me-card{
-
+   
        display:flex;
       align-content: center;
       align-items: center;
       justify-content: center; 
       background-color:rgb(233, 233, 233);
+
   }
 
   .Project-1{
@@ -246,6 +254,7 @@ body{
       flex-wrap: wrap;
       flex-direction: column-reverse;
       align-content: center; 
+      
 
   }
 
