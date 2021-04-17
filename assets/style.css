@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+/* This gets rid of white space on the right side of the page */
+
+body{
+    overflow-x: hidden;
+ }
 
 /* css variables and properties */
  :root {
@@ -14,33 +19,14 @@
  
 }
 
-#para-text{
- line-height: normal;
- font-size: large;
-}
-
-#about-me{
-    font-weight: bolder;
-}
-
 /* Navbar styling */
 
-.navbar-menu1{
-    padding-right: 25px;
+.my-name{
+    margin-right: 700px;
+    padding-left: 25px;
+    font-family: 'Monofett';
+    font-size: 75px;
 
-}
-
-.navbar{
-    background-color: var(--background-color1);
- 
-}
-
-/* @media screen (min-width: 600px){
-    justify-content: space-between;
-} */
-
-#contact{
-    background-color: var(--background-color2);
 }
 
 .title {
@@ -48,29 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-   
-   
 }
-
-
-
-
-.grid-container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-    background-color: var(--background-color1);
-  
-
-}
-
-
-.navbar-brand-contact{
-    text-align:center;
-}
-
-
 
 .hero {
     display: flex;
@@ -80,46 +44,57 @@
   
 }
 
+.navbar-menu1{
+    padding-right: 25px;
 
+}
 
+/* About Me Section */
 
+.me-card{
+   
+    display:flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center; 
+   background-color:var(--background-color2);
 
-.nav {
+}
+
+.myphoto{
+    padding-left: 30px;
     display: flex;
-    flex-direction: center;
-    justify-content:flex-end;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center; 
+    
+
+} 
+
+.card-title{
+    padding-top: 40px;
 }
 
 
-
-
-
-
-
-
-
-body{
-   overflow-x: hidden;
+#about-me{
+    font-weight: bolder;
 }
+#para-text{
+    line-height: normal;
+    font-size: large;
+   }
 
+/* Project Cards */
 
-.container-fluid{
-    background-color: var(--background-color2);
-}
+.grid-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    background-color: var(--background-color1);
 
+} 
 
- .my-name{
-    margin-right: 700px;
-    padding-left: 25px;
-    font-family: 'Monofett';
-    font-size: 75px;
-
-}
-
-
-
-
+/* Used CSS Interactive Grid Generator for project cards (www.grid.layoutit.com)*/
 
 .grid-container {
     display: grid;
@@ -147,15 +122,6 @@ body{
     
 }
 
-  .me-card{
-   
-       display:flex;
-      align-content: center;
-      align-items: center;
-      justify-content: center; 
-      background-color:var(--background-color2);
-
-  }
 
   .Project-1{
       padding-left: 50px;
@@ -177,18 +143,82 @@ body{
      
   }
 
-  .myphoto{
-      padding-left: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-      align-content: center; 
-      
 
+
+/* Footer styling */
+
+.navbar-brand-contact{
+    text-align:center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.container-fluid{
+    background-color: var(--background-color2);
+}
+
+
+  .navbar{
+    background-color: var(--background-color1);
+ 
+}
+
+#contact{
+    background-color: var(--background-color2);
+}
+
+.navbar-text{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+
+  /* Media queries for responsiveness accross devices */
+
+@media screen and (max-width: 280px){
+    .myphoto{
+        width: 30%;
+    }
+}
+
+
+  @media screen and (max-width: 414px){
+      .card-body{
+          font-size: 10px;
+        
+         
+      }
   }
-
-  .card-title{
-      padding-top: 40px;
+  @media screen and (max-width: 414px){
+      .card-text{
+          font-size: 10px;
+        
+         
+      }
+  }
+  @media screen and (max-width: 411px){
+      .card-title{
+          font-size: 10px;
+        
+         
+      }
+  }
+  @media screen and (max-width: 411px){
+      .navbar-item{
+          font-size: 10px;
+        
+         
+      }
+  }
+  @media screen and (max-width: 414px){
+      #para-text{
+          font-size: 10px;
+        
+         
+      }
   }
 
   @media screen and (max-height: 600px){
@@ -229,46 +259,25 @@ body{
 }
 
 
-@media screen and (max-height:375px){
-    #nav-link{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-  
-        
-    }
-}
-@media screen and (max-height:768px){
-    #nav-link{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-  
-        
-    }
-}
-
 @media screen and (max-height: 1023px) {
     .navbar-menu1{
         display: flex;
         flex-direction: column;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
         box-shadow: none;
         
-        
     }
 
 }
 
-
-
-@media screen and (max-height: 768){
-    .navbar-menu1{
+@media screen and (max-width: 320px){
+    .navbar-text{
         display: flex;
-    }
-    .navbarText{
-        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
-    
+
