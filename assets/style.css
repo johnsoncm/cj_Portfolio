@@ -49,6 +49,10 @@ body{
 
 }
 
+.navbar-item{
+    font-size: 20px;
+}
+
 /* About Me Section */
 
 .me-card{
@@ -162,6 +166,7 @@ body{
     text-align:center;
     text-decoration: none;
     color: black;
+    font-size: 25px;
 }
 
 
@@ -184,6 +189,10 @@ body{
     justify-content: flex-end;
     flex-direction: row;
 
+}
+
+.nav-link{
+    font-size: 20px;
 }
 
 
