@@ -198,6 +198,23 @@ body{
 
   /* Media queries for responsiveness accross devices */
 
+  @media screen and (max-width: 768px){
+      .Project-1{
+          width: 100%;
+      }
+  }
+  @media screen and (max-width: 768px){
+      .hw1{
+          width: 100%;
+      }
+  }
+  @media screen and (max-width: 768px){
+      .hw2{
+          width: 100%;
+      }
+  }
+
+
 @media screen and (max-width: 280px){
     .myphoto{
         width: 30%;
