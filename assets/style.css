@@ -97,41 +97,17 @@ body{
 
 /* Project Cards */
 
-.grid-container {
-    display: flex;
+
+
+
+ .middle-section-color {
+    /* display: flex;
     flex-direction: column-reverse;
-    align-content: center;
+    align-content: center; */
     background-color: var(--background-color1);
 
-} 
+}  
 
-/* Used CSS Interactive Grid Generator for project cards (www.grid.layoutit.com) */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "Project-1 Project-1 hw1 ."
-      "Project-1 Project-1 hw2 ."
-      ". . . .";
-      
-  }
-  
-  .Project-1 { grid-area: Project-1;
-   }
-  
-  .hw1 { grid-area: hw1; 
-    padding-top: 50px;
-    margin-top: 50px;
-    
-}
-  
-  .hw2 { grid-area: hw2;
-    padding-top: 60px;
-    
-}
 
 
 
@@ -149,7 +125,7 @@ body{
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 50px;
-     
+     background-color: var(--background-color1);
   }
   .hw2{
       padding-left: 50px;
@@ -198,21 +174,7 @@ body{
 
   /* Media queries for responsiveness accross devices */
 
-  @media screen and (max-width: 768px){
-      .Project-1{
-          width: 100%;
-      }
-  }
-  @media screen and (max-width: 768px){
-      .hw1{
-          width: 100%;
-      }
-  }
-  @media screen and (max-width: 768px){
-      .hw2{
-          width: 100%;
-      }
-  }
+
 
 
 @media screen and (max-width: 280px){
